@@ -1,6 +1,8 @@
+// "use client"
 import React from 'react'
-import Head from 'next/head';
-import Script from 'next/script';
+// import Head from 'next/head';
+// import Script from 'next/script';
+
 
 function Index() {
   return (
@@ -12,7 +14,7 @@ function Index() {
     <meta charset="utf-8">
     <title> L.D. College of Engineering</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <!-- <meta content="" name="keywords">
+    // <!-- <meta content="" name="keywords">
     <meta content="" name="description"> */}
       {/* Google Web Fonts */}
       {/* <link rel="preconnect" href="https://fonts.googleapis.com" />

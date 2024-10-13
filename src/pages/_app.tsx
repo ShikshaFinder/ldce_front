@@ -1,7 +1,7 @@
 // import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import "./style.css";
-import $ from "jquery";
+// import $ from "jquery";
 
 // import "./_nav.scss"
 // import "../scss/bootstrap.scss";
