@@ -27,10 +27,10 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <Script
+        <script
           async
           src="/main.js" // This can be an external URL or a local file
-          strategy="afterInteractive" // You can choose when to load the script
+          // strategy="afterInteractive" // You can choose when to load the script
         />
         <Main />
         <NextScript />
