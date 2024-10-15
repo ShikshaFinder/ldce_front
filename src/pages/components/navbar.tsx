@@ -34,20 +34,16 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      {/* navbar main */}
       <div className="container-fluid position-relative p-0">
         <nav className="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-          <a href="" className="navbar-brand p-0">
-            <div className="row">
-              <div
-                className="col-lg-6 col-md-6 col-sm-6"
-                style={{ width: "auto" }}
-              >
-                <img src="img/ldce-logo.png" alt="Logo" />
+          <a href="#" className="navbar-brand p-0">
+            <div className="row align-items-center">
+              <div className="col-auto">
+                <img src="img/ldce-logo.png" alt="LDCE Logo" />
               </div>
-              <div className="col-lg-6 col-md-6 col-sm-6">
-                <h4>
-                  <i className=""></i>L.D. College of Engineering
-                </h4>
+              <div className="col-auto">
+                <h4 className="text-primary m-0">LD College of Engineering</h4>
               </div>
             </div>
           </a>
@@ -70,16 +66,16 @@ const Navbar = () => {
                   className="nav-link dropdown-toggle"
                   data-bs-toggle="dropdown"
                 >
-                  Acedemics
+                  Academics
                 </a>
                 <div className="dropdown-menu m-0">
-                  <a href="" className="dropdown-item">
+                  <a href="#" className="dropdown-item">
                     BE Admission & Courses
                   </a>
-                  <a href="" className="dropdown-item">
+                  <a href="#" className="dropdown-item">
                     PDDC Courses
                   </a>
-                  <a href="" className="dropdown-item">
+                  <a href="#" className="dropdown-item">
                     PG Admission Courses
                   </a>
                 </div>
@@ -93,13 +89,13 @@ const Navbar = () => {
                   Pages
                 </a>
                 <div className="dropdown-menu m-0">
-                  <a href="" className="dropdown-item">
+                  <a href="#" className="dropdown-item">
                     BE Admission & Courses
                   </a>
-                  <a href="" className="dropdown-item">
+                  <a href="#" className="dropdown-item">
                     PDDC Courses
                   </a>
-                  <a href="" className="dropdown-item">
+                  <a href="#" className="dropdown-item">
                     PG Admission Courses
                   </a>
                 </div>
@@ -107,7 +103,7 @@ const Navbar = () => {
               <a href="#" className="nav-item nav-link">
                 About
               </a>
-              <a href="./departments.html" className="nav-item nav-link">
+              <a href="departments.html" className="nav-item nav-link">
                 Departments
               </a>
               <a href="#" className="nav-item nav-link">
