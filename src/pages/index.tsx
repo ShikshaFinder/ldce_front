@@ -1,13 +1,11 @@
 // "use client"
-import React from 'react'
+import React from "react";
 // import Head from 'next/head';
 // import Script from 'next/script';
-
 
 function Index() {
   return (
     <>
-      
       <div>
         {/* Carousel Start */}
         <div className="carousel-header">
@@ -975,150 +973,131 @@ function Index() {
             <h5 className="section-title px-3">NEWS</h5>
             <h1 className="mb-0">LATEST NEWS</h1>
           </div>
-          <div className="packages-carousel owl-carousel">
-            <div className="packages-item">
-              <div className="packages-img">
-                <img
-                  src="/img/news.jpeg"
-                  className="img-fluid w-100 rounded-top"
-                  alt="Image"
-                />
-                <div
-                  className="packages-info d-flex border border-start-0 border-end-0 position-absolute"
-                  style={{ width: "100%", bottom: 0, left: 0, zIndex: 5 }}
-                >
-                  <small className="flex-fill text-center border-end py-2">
-                    <i className="fa fa-calendar-alt me-2" />
-                    16 DEC 2023
-                  </small>
-                </div>
-              </div>
-              <div className="packages-content bg-light">
-                <div className="p-4 pb-0">
-                  <p className="mb-4">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Nesciunt nemo quia quae illum aperiam fugiat voluptatem
-                    repellat
-                  </p>
-                </div>
-                <div className="row bg-primary rounded-bottom mx-0">
-                  <div className="col-6 text-start px-0">
-                    <a href="#" className="btn-hover btn text-white py-2 px-4">
-                      Read More
-                    </a>
+          <div className="row">
+            <div className="col-lg-4 col-md-6 col-12 mb-4">
+              <div className="packages-item">
+                <div className="packages-img">
+                  <img
+                    src="/img/news.jpeg"
+                    className="img-fluid w-100 rounded-top"
+                    alt="Image"
+                  />
+                  <div
+                    className="packages-info d-flex border border-start-0 border-end-0 position-absolute"
+                    style={{ width: "100%", bottom: 0, left: 0, zIndex: 5 }}
+                  >
+                    <small className="flex-fill text-center border-end py-2">
+                      <i className="fa fa-calendar-alt me-2" />
+                      16 DEC 2023
+                    </small>
                   </div>
-                  <div className="col-6 text-end px-0"></div>
+                </div>
+                <div className="packages-content bg-light">
+                  <div className="p-4 pb-0">
+                    <p className="mb-4">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Nesciunt nemo quia quae illum aperiam fugiat voluptatem
+                      repellat
+                    </p>
+                  </div>
+                  <div className="row bg-primary rounded-bottom mx-0">
+                    <div className="col-6 text-start px-0">
+                      <a
+                        href="#"
+                        className="btn-hover btn text-white py-2 px-4"
+                      >
+                        Read More
+                      </a>
+                    </div>
+                    <div className="col-6 text-end px-0"></div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="packages-item">
-              <div className="packages-img">
-                <img
-                  src="/img/news.jpeg"
-                  className="img-fluid w-100 rounded-top"
-                  alt="Image"
-                />
-                <div
-                  className="packages-info d-flex border border-start-0 border-end-0 position-absolute"
-                  style={{ width: "100%", bottom: 0, left: 0, zIndex: 5 }}
-                >
-                  <small className="flex-fill text-center border-end py-2">
-                    <i className="fa fa-calendar-alt me-2" />
-                    16 DEC 2023
-                  </small>
-                </div>
-              </div>
-              <div className="packages-content bg-light">
-                <div className="p-4 pb-0">
-                  <p className="mb-4">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Nesciunt nemo quia quae illum aperiam fugiat voluptatem
-                    repellat
-                  </p>
-                </div>
-                <div className="row bg-primary rounded-bottom mx-0">
-                  <div className="col-6 text-start px-0">
-                    <a href="#" className="btn-hover btn text-white py-2 px-4">
-                      Read More
-                    </a>
+            <div className="col-lg-4 col-md-6 col-12 mb-4">
+              <div className="packages-item">
+                <div className="packages-img">
+                  <img
+                    src="/img/news.jpeg"
+                    className="img-fluid w-100 rounded-top"
+                    alt="Image"
+                  />
+                  <div
+                    className="packages-info d-flex border border-start-0 border-end-0 position-absolute"
+                    style={{ width: "100%", bottom: 0, left: 0, zIndex: 5 }}
+                  >
+                    <small className="flex-fill text-center border-end py-2">
+                      <i className="fa fa-calendar-alt me-2" />
+                      16 DEC 2023
+                    </small>
                   </div>
-                  <div className="col-6 text-end px-0"></div>
+                </div>
+                <div className="packages-content bg-light">
+                  <div className="p-4 pb-0">
+                    <p className="mb-4">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Nesciunt nemo quia quae illum aperiam fugiat voluptatem
+                      repellat
+                    </p>
+                  </div>
+                  <div className="row bg-primary rounded-bottom mx-0">
+                    <div className="col-6 text-start px-0">
+                      <a
+                        href="#"
+                        className="btn-hover btn text-white py-2 px-4"
+                      >
+                        Read More
+                      </a>
+                    </div>
+                    <div className="col-6 text-end px-0"></div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="packages-item">
-              <div className="packages-img">
-                <img
-                  src="/img/news.jpeg"
-                  className="img-fluid w-100 rounded-top"
-                  alt="Image"
-                />
-                <div
-                  className="packages-info d-flex border border-start-0 border-end-0 position-absolute"
-                  style={{ width: "100%", bottom: 0, left: 0, zIndex: 5 }}
-                >
-                  <small className="flex-fill text-center border-end py-2">
-                    <i className="fa fa-calendar-alt me-2" />
-                    16 DEC 2023
-                  </small>
-                </div>
-              </div>
-              <div className="packages-content bg-light">
-                <div className="p-4 pb-0">
-                  <p className="mb-4">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Nesciunt nemo quia quae illum aperiam fugiat voluptatem
-                    repellat
-                  </p>
-                </div>
-                <div className="row bg-primary rounded-bottom mx-0">
-                  <div className="col-6 text-start px-0">
-                    <a href="#" className="btn-hover btn text-white py-2 px-4">
-                      Read More
-                    </a>
+            <div className="col-lg-4 col-md-6 col-12 mb-4">
+              <div className="packages-item">
+                <div className="packages-img">
+                  <img
+                    src="/img/news.jpeg"
+                    className="img-fluid w-100 rounded-top"
+                    alt="Image"
+                  />
+                  <div
+                    className="packages-info d-flex border border-start-0 border-end-0 position-absolute"
+                    style={{ width: "100%", bottom: 0, left: 0, zIndex: 5 }}
+                  >
+                    <small className="flex-fill text-center border-end py-2">
+                      <i className="fa fa-calendar-alt me-2" />
+                      16 DEC 2023
+                    </small>
                   </div>
-                  <div className="col-6 text-end px-0"></div>
                 </div>
-              </div>
-            </div>
-            <div className="packages-item">
-              <div className="packages-img">
-                <img
-                  src="/img/news.jpeg"
-                  className="img-fluid w-100 rounded-top"
-                  alt="Image"
-                />
-                <div
-                  className="packages-info d-flex border border-start-0 border-end-0 position-absolute"
-                  style={{ width: "100%", bottom: 0, left: 0, zIndex: 5 }}
-                >
-                  <small className="flex-fill text-center border-end py-2">
-                    <i className="fa fa-calendar-alt me-2" />
-                    16 DEC 2023
-                  </small>
-                </div>
-              </div>
-              <div className="packages-content bg-light">
-                <div className="p-4 pb-0">
-                  <p className="mb-4">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Nesciunt nemo quia quae illum aperiam fugiat voluptatem
-                    repellat
-                  </p>
-                </div>
-                <div className="row bg-primary rounded-bottom mx-0">
-                  <div className="col-6 text-start px-0">
-                    <a href="#" className="btn-hover btn text-white py-2 px-4">
-                      Read More
-                    </a>
+                <div className="packages-content bg-light">
+                  <div className="p-4 pb-0">
+                    <p className="mb-4">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Nesciunt nemo quia quae illum aperiam fugiat voluptatem
+                      repellat
+                    </p>
                   </div>
-                  <div className="col-6 text-end px-0"></div>
+                  <div className="row bg-primary rounded-bottom mx-0">
+                    <div className="col-6 text-start px-0">
+                      <a
+                        href="#"
+                        className="btn-hover btn text-white py-2 px-4"
+                      >
+                        Read More
+                      </a>
+                    </div>
+                    <div className="col-6 text-end px-0"></div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       {/* NEWS End */}
       {/* EVENTS Start */}
       {/* <div class="container-fluid blog py-5">

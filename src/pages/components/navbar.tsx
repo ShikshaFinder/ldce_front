@@ -40,7 +40,7 @@ const Navbar = () => {
           <a href="#" className="navbar-brand p-0">
             <div className="row align-items-center">
               <div className="col-auto">
-                <img src="img/ldce-logo.png" alt="LDCE Logo" />
+                <img src="/img/ldce-logo.png" alt="LDCE Logo" />
               </div>
               <div className="col-auto">
                 <h4 className="text-primary m-0">LD College of Engineering</h4>
@@ -57,7 +57,7 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <div className="navbar-nav ms-auto py-0">
-              <a href="index.html" className="nav-item nav-link active">
+              <a href="index.html" className="nav-item nav-link active" style={{ color: "darkblue" }}>
                 Home
               </a>
               <div className="nav-item dropdown">
@@ -65,6 +65,7 @@ const Navbar = () => {
                   href="#"
                   className="nav-link dropdown-toggle"
                   data-bs-toggle="dropdown"
+                  style={{ color: "darkblue" }}
                 >
                   Academics
                 </a>
@@ -85,6 +86,7 @@ const Navbar = () => {
                   href="#"
                   className="nav-link dropdown-toggle"
                   data-bs-toggle="dropdown"
+                  style={{ color: "darkblue" }}
                 >
                   Pages
                 </a>
@@ -100,19 +102,19 @@ const Navbar = () => {
                   </a>
                 </div>
               </div>
-              <a href="#" className="nav-item nav-link">
+              <a href="#" className="nav-item nav-link" style={{ color: "darkblue" }}>
                 About
               </a>
-              <a href="departments.html" className="nav-item nav-link">
+              <a href="departments.html" className="nav-item nav-link" style={{ color: "darkblue" }}>
                 Departments
               </a>
-              <a href="#" className="nav-item nav-link">
+              <a href="#" className="nav-item nav-link" style={{ color: "darkblue" }}>
                 Campus Life
               </a>
-              <a href="#" className="nav-item nav-link">
+              <a href="#" className="nav-item nav-link" style={{ color: "darkblue" }}>
                 Placements
               </a>
-              <a href="#" className="nav-item nav-link">
+              <a href="#" className="nav-item nav-link" style={{ color: "darkblue" }}>
                 More
               </a>
             </div>

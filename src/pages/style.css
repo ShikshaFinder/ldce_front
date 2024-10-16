@@ -158,7 +158,7 @@
     font-family: 'Roboto', sans-serif;
     position: relative;
     padding: 35px 15px;
-    color: var(--bs-white) !important;
+    color: var(--bs-dark) !important;
     font-size: 17px;
     font-weight: 400;
     outline: none;
