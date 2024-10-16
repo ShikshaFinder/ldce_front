@@ -5,7 +5,9 @@ export default function PatentDemonstrationPage() {
   return (
     <div className="container py-5">
       <header className="text-center mb-5">
-        <h1 className="display-4 font-weight-bold mb-3">Our Patent Achievements</h1>
+        <h1 className="display-4 font-weight-bold mb-3">
+          Our Patent Achievements
+        </h1>
         <p className="lead text-muted">
           Showcasing innovation and intellectual property at our college
         </p>
@@ -31,12 +33,17 @@ export default function PatentDemonstrationPage() {
       </div>
 
       <section className="mb-5">
-        <h2 className="text-center font-weight-bold mb-4">Our Patent Holders</h2>
+        <h2 className="text-center font-weight-bold mb-4">
+          Our Patent Holders
+        </h2>
         <div className="row">
           {[...Array(10)].map((_, index) => (
-            <div key={index} className="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4">
+            <div
+              key={index}
+              className="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-4"
+            >
               <Image
-                src={`/placeholder.svg?height=150&width=150`}
+                src={`/img/subscribe-img.jpg`}
                 alt={`Patent Holder ${index + 1}`}
                 width={150}
                 height={150}
@@ -49,14 +56,25 @@ export default function PatentDemonstrationPage() {
       </section>
 
       <section className="mb-5">
-        <h2 className="text-center font-weight-bold mb-4">College Innovation Brief</h2>
+        <h2 className="text-center font-weight-bold mb-4">
+          College Innovation Brief
+        </h2>
         <div className="card">
           <div className="card-body">
             <p className="lead">
-              Our college has been at the forefront of innovation, consistently pushing the boundaries of what's possible in various fields of study. From groundbreaking research in renewable energy to revolutionary advancements in artificial intelligence, our faculty and students have been instrumental in developing technologies that shape the future.
+              Our college has been at the forefront of innovation, consistently
+              pushing the boundaries of what's possible in various fields of
+              study. From groundbreaking research in renewable energy to
+              revolutionary advancements in artificial intelligence, our faculty
+              and students have been instrumental in developing technologies
+              that shape the future.
             </p>
             <p className="lead mt-3">
-              Our patent portfolio spans diverse areas including biotechnology, computer science, engineering, and environmental sciences. These patents not only represent our commitment to innovation but also our dedication to solving real-world problems and contributing to the global knowledge economy.
+              Our patent portfolio spans diverse areas including biotechnology,
+              computer science, engineering, and environmental sciences. These
+              patents not only represent our commitment to innovation but also
+              our dedication to solving real-world problems and contributing to
+              the global knowledge economy.
             </p>
           </div>
         </div>
@@ -69,7 +87,7 @@ export default function PatentDemonstrationPage() {
             <div key={index} className="col-lg-4 col-md-6 mb-4">
               <div className="card h-100">
                 <Image
-                  src={`/placeholder.svg?height=200&width=400`}
+                  src={`/img/sprite.png`}
                   alt={`Featured Patent ${index + 1}`}
                   width={400}
                   height={200}
@@ -78,7 +96,9 @@ export default function PatentDemonstrationPage() {
                 <div className="card-body">
                   <h3 className="card-title">Patent Title {index + 1}</h3>
                   <p className="card-text text-muted">
-                    Brief description of the patent and its potential applications in the real world. This innovative technology promises to revolutionize its field.
+                    Brief description of the patent and its potential
+                    applications in the real world. This innovative technology
+                    promises to revolutionize its field.
                   </p>
                 </div>
               </div>

@@ -57,7 +57,7 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <div className="navbar-nav ms-auto py-0">
-              <a href="index.html" className="nav-item nav-link active" style={{ color: "darkblue" }}>
+              <a href="/" className="nav-item nav-link active" style={{ color: "darkblue" }}>
                 Home
               </a>
               <div className="nav-item dropdown">
@@ -102,20 +102,20 @@ const Navbar = () => {
                   </a>
                 </div>
               </div>
-              <a href="#" className="nav-item nav-link" style={{ color: "darkblue" }}>
-                About
+              <a href="/startups" className="nav-item nav-link" style={{ color: "darkblue" }}>
+                Startups
               </a>
-              <a href="departments.html" className="nav-item nav-link" style={{ color: "darkblue" }}>
+              <a href="/departments" className="nav-item nav-link" style={{ color: "darkblue" }}>
                 Departments
               </a>
-              <a href="#" className="nav-item nav-link" style={{ color: "darkblue" }}>
-                Campus Life
+              <a href="/patent" className="nav-item nav-link" style={{ color: "darkblue" }}>
+                Patent
               </a>
               <a href="#" className="nav-item nav-link" style={{ color: "darkblue" }}>
                 Placements
               </a>
-              <a href="#" className="nav-item nav-link" style={{ color: "darkblue" }}>
-                More
+              <a href="/researchpaper" className="nav-item nav-link" style={{ color: "darkblue" }}>
+                Research Paper
               </a>
             </div>
           </div>

@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { ArrowRight, Award, Briefcase, FileText } from "lucide-react";
+import { JSX, SVGProps } from "react";
+import { ButtonHTMLAttributes, DetailedHTMLProps, ReactNode } from "react";
 
 export default function StartupDemoPage() {
   return (
@@ -29,7 +31,9 @@ export default function StartupDemoPage() {
         <section className="bg-dark text-light text-center py-5">
           <div className="container">
             <h1 className="display-4 fw-bold">Empowering Student Startups</h1>
-            <p className="lead">Fostering innovation and entrepreneurship in our college community</p>
+            <p className="lead">
+              Fostering innovation and entrepreneurship in our college community
+            </p>
             <Button className="btn btn-primary btn-lg">
               Learn More <ArrowRight className="ms-2" />
             </Button>
@@ -54,7 +58,9 @@ export default function StartupDemoPage() {
                   <div className="card-body">
                     <Award className="h-12 w-12 text-success mb-3" />
                     <h3 className="h4">30+</h3>
-                    <p className="text-muted">Startups Registered under Startup India</p>
+                    <p className="text-muted">
+                      Startups Registered under Startup India
+                    </p>
                   </div>
                 </div>
               </div>
@@ -82,12 +88,15 @@ export default function StartupDemoPage() {
                       alt={`Startup ${i}`}
                       className="card-img-top"
                       height={240}
-                      src={`/placeholder.svg?height=240&width=360`}
+                      src={`/img/20231218_175604.jpg`}
                       width={360}
                     />
                     <div className="card-body">
                       <h3 className="h5">Startup {i}</h3>
-                      <p className="text-muted">A brief description of Startup {i} and their innovative solution.</p>
+                      <p className="text-muted">
+                        A brief description of Startup {i} and their innovative
+                        solution.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -107,13 +116,14 @@ export default function StartupDemoPage() {
                       alt={`Achievement ${i}`}
                       className="card-img-top"
                       height={160}
-                      src={`/placeholder.svg?height=160&width=320`}
+                      src={`/img/20240221_160831.jpg`}
                       width={320}
                     />
                     <div className="card-body">
                       <h3 className="h5">Achievement {i}</h3>
                       <p className="text-muted">
-                        Description of a significant achievement or award received by one of our startups.
+                        Description of a significant achievement or award
+                        received by one of our startups.
                       </p>
                     </div>
                   </div>
@@ -125,7 +135,9 @@ export default function StartupDemoPage() {
       </main>
 
       <footer className="d-flex flex-column flex-sm-row align-items-center justify-content-between py-3 bg-light border-top">
-        <p className="mb-2 mb-sm-0 text-muted">&copy; 2024 Acme College. All rights reserved.</p>
+        <p className="mb-2 mb-sm-0 text-muted">
+          &copy; 2024 Acme College. All rights reserved.
+        </p>
         <nav className="d-flex gap-3">
           <Link className="text-muted text-decoration-none" href="#">
             Terms of Service
@@ -139,7 +151,7 @@ export default function StartupDemoPage() {
   );
 }
 
-function MortarboardIcon(props) {
+function MortarboardIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -159,7 +171,7 @@ function MortarboardIcon(props) {
   );
 }
 
-function Link({ href, children, ...props }) {
+function Link({ href, children, ...props }: { href: string; children: React.ReactNode; [key: string]: any }) {
   return (
     <a href={href} {...props}>
       {children}
@@ -167,7 +179,12 @@ function Link({ href, children, ...props }) {
   );
 }
 
-function Button({ children, className, ...props }) {
+
+function Button({
+  children,
+  className,
+  ...props
+}: DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> & { children: ReactNode }) {
   return (
     <button className={`btn ${className}`} {...props}>
       {children}
