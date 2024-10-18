@@ -57,6 +57,19 @@ const styles = `
 `;
 
 function Department() {
+  const [Department, setDepartment] = React.useState<{ data: { name: string }[] } | null>(null);
+
+  async function getDepartments() {
+    const response = await fetch("https://stag-api.ldce.ac.in/api/departments");
+    const data = await response.json();
+    setDepartment(data);
+    console.log(data);
+    console.log(data.data[0].name);
+  }
+  React.useEffect(() => {
+    getDepartments();
+  }, []);
+
   return (
     <>
       <style>{styles}</style>
@@ -87,10 +100,7 @@ function Department() {
                 alt=""
                 srcSet=""
               />
-              <a href="">
-                Applied <br />
-                Mechanics
-              </a>
+              {Department && Department.data[0].name}
             </div>
           </div>
           <div className="dept-box col-lg-3 col-md-3 col-sm-12">
@@ -101,10 +111,7 @@ function Department() {
                 alt=""
                 srcSet=""
               />
-              <a href="">
-                Automobile <br />
-                Engineering
-              </a>
+              <a href="">{Department && Department.data[1].name}</a>
             </div>
           </div>
           <div className="dept-box col-lg-3 col-md-3 col-sm-12">
@@ -115,10 +122,7 @@ function Department() {
                 alt=""
                 srcSet=""
               />
-              <a href="">
-                Bio Medical <br />
-                Engineering
-              </a>
+              <a href="">{Department && Department.data[2].name}</a>
             </div>
           </div>
           <div className="dept-box col-lg-3 col-md-3 col-sm-12">

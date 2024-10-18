@@ -1,9 +1,22 @@
 // "use client"
-import React from "react";
+import React, { useState } from "react";
 // import Head from 'next/head';
 // import Script from 'next/script';
 
+
 function Index() {
+  const [News,SetNews]=useState([]);
+  async function NewsFetch () {
+    const response = await fetch("https://stag-api.ldce.ac.in/api/news");
+    const data = await response.json();
+    console.log(data);
+    SetNews(data);
+    console.log(News)
+    
+  }
+  React.useEffect(() => {
+    NewsFetch();
+  }, []);
   return (
     <>
       <div>

@@ -59,9 +59,59 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
         {/* Customized Bootstrap Stylesheet */}
-        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link href="/css/bootstrap.min.css" rel="stylesheet" />
         {/* Template Stylesheet */}
-        <link href="css/style.css" rel="stylesheet" />
+        <link href="/
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        css/style.css" rel="stylesheet" />
         <style
           dangerouslySetInnerHTML={{
             __html:
@@ -69,7 +119,7 @@ export default function App({ Component, pageProps }: AppProps) {
           }}
         />
       </Head>
-          <Navbar />
+      <Navbar />
       <Component {...pageProps} />
     </>
   );
